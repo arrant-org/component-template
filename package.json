@@ -1,0 +1,38 @@
+{
+  "name": "@arrant/component-template",
+  "version": "0.1.0",
+  "description": "Arrant Component Template",
+  "private": false,
+  "scripts": {
+    "build": "webpack --mode=production",
+    "copy": "node copy-files.js",
+    "publish": "npm run build && npm run copy && npm publish build --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arrant-org/component-template.git"
+  },
+  "keywords": [
+    "react",
+    "arrant"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arrant-org/component-template/issues"
+  },
+  "homepage": "https://github.com/arrant-org/component-template#readme",
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "styled-components": "^4.1.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
+  }
+}
