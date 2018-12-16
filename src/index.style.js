@@ -4,4 +4,3 @@ const StyledComponent = styled.div`
 `
 
 export default StyledComponent
-

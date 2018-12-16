@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack --mode=production",
     "copy": "node copy-files.js",
-    "publish": "npm run build && npm run copy && npm publish build --access public"
+    "publish": "npm run build && npm run copy && npm publish build --access public",
+    "storybook": "start-storybook -p 2019 -c .storybook"
   },
   "repository": {
     "type": "git",
@@ -25,14 +26,21 @@
   "dependencies": {
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
+    "react-dom": "^16.6.3",
     "styled-components": "^4.1.2"
   },
   "devDependencies": {
+    "@storybook/addon-info": "^4.1.1",
+    "@storybook/react": "^4.1.1",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "webpack": "^4.27.1",
     "webpack-cli": "^3.1.2"
+  },
+  "peerDependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
   }
 }
