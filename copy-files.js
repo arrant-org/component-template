@@ -8,7 +8,7 @@ fs.copyFile('README.md', buildDir + '/README.md', (err, c) => {
   console.log('Copied README')
 })
 
-const { devDependencies, scripts, ...otherPackageData } = require('./package.json')
+const { devDependencies, peerDependencies, scripts, ...otherPackageData } = require('./package.json')
 
 const package = {
   ...otherPackageData,
